@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Javascript</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            background-image: linear-gradient(to right, black, rgb(161, 31, 31), red);
+            color: white;
+        }
+        h1{
+            font-size: 2.3em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:red;
+
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Praticando</h1>
+
+
+
+    <script>
+       /* window.alert('Olá')
+        window.confirm('Está tudo bem?')
+        window.prompt('Qual ps eu nome?')*/
+
+        var nome = window.prompt('Qual é o seu nome?')
+        var idade = Number(window.prompt('Qual é a sua idade?'))
+        var nota1 = parseFloat(window.prompt(`Quanto você tirou na prova 1 ${nome}?`))
+        var nota2 = parseFloat(window.prompt(`Quanto você tirou na prova 2 ${nome}?`))
+        media = (nota1 + nota2) / 2
+        media = media.toString().replace('.', ',')
+        document.write(`O aluno ${nome.toUpperCase()} de ${idade} anos tirou ${nota1} na prova 1 e <br> ${nota2} na prova 2. A sua média final foi ${media}.`)
+        
+    </script>
+</body>
+</html>
