@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.562));
+    }
+    h1{
+        background-color: black;
+        color: white;
+    }
+    input{
+        margin-top: 10px;
+        width: 200px;
+        background-color: rgb(32, 26, 26);
+        box-shadow: 1px 1px 1px white;
+        color: white;
+
+    }
+    input#soma{
+        width: 50px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    div#res{
+        color: yellow;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <h1>Praticando 2</h1>
+    
+    <input type="number" name="num1" id="inum1" placeholder="Digite um número..." required> +
+    <input type="number" name="num2" id="inum2" placeholder="Digite um número..." required>
+    <input type="button" value="Somar" onclick="somar()" id="soma">
+    <div id="res"></div>
+
+    
+    <script>
+        var tnum1 = document.getElementById('inum1')
+        var tnum2 = document.getElementById('inum2')
+        var resultado = document.getElementById('res')
+
+        function somar(){
+
+        num1 = Number(tnum1.value)
+        num2 = Number(tnum2.value)
+        soma = num1 + num2
+        resultado.innerHTML = `A soma entre ${num1} e ${num2} é ${soma}`
+        }
+
+    </script>
+</body>
+</html>
