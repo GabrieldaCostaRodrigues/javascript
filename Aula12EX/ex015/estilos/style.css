@@ -4,6 +4,7 @@
 body{
     background: rgb(71, 71, 151);
     font: normal 20px arial;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
 }
 
 header{
@@ -28,3 +29,17 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+img#foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
